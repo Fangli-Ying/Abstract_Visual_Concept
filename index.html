@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation">
+  <meta name="description"
+   content="Prompt-guided concept-vector learning for controllable manipulation of abstract visual concepts in diffusion models using bottleneck semantic injection.">
+  <meta name="keywords" content="diffusion models, stable diffusion, concept-vector learning, prompt-guided learning, semantic manipulation, image-to-image editing, bottleneck feature injection, abstract visual concepts">
+  <meta name="author" content="Mahzaib Khalid, Fangli Ying, Al-Garadi Ahmed Mohammed Atef, Aniwat Phaphuangwittayakul, Riyad Dhuny">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="East China University of Science and Technology">
+  <meta property="og:title" content="Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation">
+  <meta property="og:description" content="A lightweight concept-vector framework for controllable abstract visual concept manipulation in Stable Diffusion using bottleneck feature injection.">
+  <meta property="og:url" content="https://www.mdpi.com/2313-433X/12/7/279">
+  <meta property="og:image" content="static/images/framework1.png">
+  <meta property="og:image:alt" content="Main framework diagram for prompt-guided concept-vector learning">
+  <meta property="article:published_time" content="2026-06-25T00:00:00.000Z">
+  <meta property="article:author" content="Mahzaib Khalid">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Diffusion Models">
+  <meta property="article:tag" content="Semantic Manipulation">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prompt-Guided Semantic Latent Direction Learning in Diffusion Models">
+  <meta name="twitter:description" content="Prompt-guided concept-vector learning for controllable abstract visual concept manipulation in diffusion models.">
+  <meta name="twitter:image" content="static/images/framework1.png">
+  <meta name="twitter:image:alt" content="Main framework diagram for prompt-guided concept-vector learning">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation">
+  <meta name="citation_author" content="Khalid, Mahzaib">
+  <meta name="citation_author" content="Ying, Fangli">
+  <meta name="citation_author" content="Atef, Al-Garadi Ahmed Mohammed">
+  <meta name="citation_author" content="Phaphuangwittayakul, Aniwat">
+  <meta name="citation_author" content="Dhuny, Riyad">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_journal_title" content="Journal of Imaging">
+  <meta name="citation_volume" content="12">
+  <meta name="citation_issue" content="7">
+  <meta name="citation_article_number" content="279">
+  <meta name="citation_doi" content="10.3390/jimaging12070279">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <title>Prompt-Guided Semantic Latent Direction Learning | Mahzaib Khalid et al.</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation",
+    "description": "A prompt-guided concept-vector learning framework for controllable manipulation of abstract visual concepts in diffusion models.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Mahzaib Khalid",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "East China University of Science and Technology"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Fangli Ying",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "East China University of Science and Technology"
+        }
+      }
+    ],
+    "datePublished": "2026-06-25",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Journal of Imaging"
+    },
+    "url": "https://www.mdpi.com/2313-433X/12/7/279",
+    "image": "static/images/framework1.png",
+    "keywords": ["diffusion models", "stable diffusion", "concept-vector learning", "semantic manipulation", "image-to-image editing"],
+    "abstract": "Diffusion-based generative models achieve high-fidelity image synthesis; however, controlling internal representations for abstract visual concepts remains challenging due to the ambiguity of textual descriptions. This work proposes a prompt-guided concept-vector learning framework for controllable manipulation of abstract concepts without requiring external human-annotated image pairs, segmentation masks, identity labels, or manually annotated editing targets.",
+    "citation": "Khalid, M.; Ying, F.; Atef, A.-G.A.M.; Phaphuangwittayakul, A.; Dhuny, R. Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation. Journal of Imaging 2026, 12(7), 279. https://doi.org/10.3390/jimaging12070279",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://www.mdpi.com/2313-433X/12/7/279"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Diffusion Models"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Computer Vision"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "East China University of Science and Technology",
+    "url": "https://www.ecust.edu.cn/",
+    "logo": "static/images/favicon.ico"
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Mahzaib Khalid<sup>1,*</sup>,</span>
+              <span class="author-block">
+                Fangli Ying<sup>1</sup>,</span>
+              <span class="author-block">
+                Al-Garadi Ahmed Mohammed Atef<sup>1</sup>,</span>
+              <span class="author-block">
+                Aniwat Phaphuangwittayakul<sup>2</sup>,</span>
+              <span class="author-block">
+                Riyad Dhuny<sup>3</sup></span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup>East China University of Science and Technology<br>
+                      <sup>2</sup>Chiang Mai University<br>
+                      <sup>3</sup>University of Technology, Mauritius<br>
+                      Journal of Imaging, 2026
+                    </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Correspondence: y30231665@mail.ecust.edu.cn</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <span class="link-block">
+                      <a href="https://www.mdpi.com/2313-433X/12/7/279" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                    <span class="link-block">
+                      <a href="#method-overview"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-project-diagram"></i>
+                      </span>
+                      <span>Method</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="#results"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-chart-line"></i>
+                    </span>
+                    <span>Results</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="#BibTeX"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-quote-right"></i>
+                  </span>
+                  <span>Citation</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion-based generative models achieve high-fidelity image synthesis; however, controlling internal representations for abstract visual concepts remains challenging due to the ambiguity of textual descriptions. We propose a prompt-guided concept-vector learning framework for controllable manipulation of such concepts without requiring external human-annotated image pairs, segmentation masks, identity labels, or manually annotated editing targets. The method learns a compact concept vector in the bottleneck feature space of a pretrained Stable Diffusion U-Net while keeping the pretrained model frozen. Positive and neutral prompt pairs provide weak semantic guidance, and the learned vector is applied in an image-to-image setting through controlled noise injection and concept-guided denoising. Experiments on perfect skin and peaceful lake show improved semantic alignment and structural preservation compared with Stable Diffusion image-to-image baselines, with human preference rates of 76.0% and 85.7%, respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method overview -->
+<section class="section" id="method-overview">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method Overview</h2>
+    <div class="content has-text-justified">
+      <p>
+        The framework learns one lightweight concept vector per target concept using paired positive and neutral prompts. The vector is injected into the U-Net mid-block, a semantic bottleneck where high-level visual information is aggregated, while the VAE, text encoder, and U-Net weights remain frozen. During editing, the concept strength is controlled by gamma and the image-to-image noise strength is controlled by beta, giving a practical trade-off between semantic modification and input-image fidelity.
+      </p>
+      <p>
+        This design is parameter efficient: each concept vector has 1280 trainable parameters, about 0.0049 MB of fp32 storage, and adds only a small inference overhead compared with the Stable Diffusion image-to-image baseline.
+      </p>
+      <figure class="framework-figure">
+        <img src="static/images/framework1.png" alt="Main framework diagram showing training data generation, concept vector training, and concept-guided image-to-image editing" loading="lazy">
+        <figcaption>
+          Main framework: prompt-paired training data generation, bottleneck concept-vector learning, and concept-guided image-to-image editing.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+
+<!-- Results -->
+<section class="hero is-small is-light" id="results">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results</h2>
+      <div class="results-grid">
+        <figure class="result-figure">
+          <img src="static/images/result-perfect-skin.jpg" alt="Perfect skin concept editing comparison showing input, Stable Diffusion image-to-image without concept, and concept-guided outputs" loading="lazy">
+          <figcaption>
+            Perfect skin concept editing. The concept-guided results reduce visible skin imperfections while preserving facial identity and structure.
+          </figcaption>
+        </figure>
+        <figure class="result-figure">
+          <img src="static/images/result-peaceful-lake.jpg" alt="Peaceful lake concept editing comparison showing input, Stable Diffusion image-to-image without concept, and concept-guided outputs" loading="lazy">
+          <figcaption>
+            Peaceful lake concept editing. The learned concept vector shifts the scene toward a calmer lake atmosphere while retaining the main scene layout.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End results -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@Article{jimaging12070279,
+  AUTHOR = {Khalid, Mahzaib and Ying, Fangli and Atef, Al-Garadi Ahmed Mohammed and Phaphuangwittayakul, Aniwat and Dhuny, Riyad},
+  TITLE = {Prompt-Guided Semantic Latent Direction Learning in Diffusion Models for Abstract Visual Concept Manipulation},
+  JOURNAL = {Journal of Imaging},
+  VOLUME = {12},
+  YEAR = {2026},
+  NUMBER = {7},
+  ARTICLE-NUMBER = {279},
+  URL = {https://www.mdpi.com/2313-433X/12/7/279},
+  ISSN = {2313-433X},
+  DOI = {10.3390/jimaging12070279}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+</main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
